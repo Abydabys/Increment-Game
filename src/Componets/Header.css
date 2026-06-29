@@ -1,0 +1,33 @@
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: var(--bg-card);
+    border-bottom: 1px solid oklch(0.25 0.03 250 / 0.2);
+    border-radius: 0 0 16px 16px;
+}
+
+.header-logo a {
+    color: var(--accent);
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-shadow: 0 0 10px oklch(0.78 0.14 200 / 0.3);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent);
+}

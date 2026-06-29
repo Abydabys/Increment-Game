@@ -1,0 +1,85 @@
+:root {
+  --bg-main: oklch(0.25 0.08 250);
+  --bg-card: oklch(0.3 0.1 255);
+  --text-primary: oklch(0.65 0.12 280);
+  --text-muted: oklch(0.55 0.15 275);
+  --accent: oklch(0.65 0.12 280);
+  --accent-hover: oklch(0.55 0.15 275);
+  --danger: oklch(0.62 0.17 15);
+}
+
+:root.theme-light {
+  --bg-main: oklch(0.4 0.14 265);
+  --bg-card: oklch(0.35 0.12 260);
+  --text-primary: oklch(0.25 0.02 250);
+  --text-muted: oklch(0.55 0.02 250);
+  --accent: oklch(0.5 0.16 273);
+  --accent-hover: oklch(0.45 0.15 270);
+  --danger: oklch(0.55 0.22 20);
+}
+
+.page-container {
+  background-color: var(--bg-card);
+  padding: clamp(1.5rem, 5vw, 3rem);
+  border-radius: 20px;
+  width: 100%;
+  box-shadow: 0 20px 50px oklch(0 0 0 / 0.3);
+  border: 1px solid oklch(0.25 0.03 250 / 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.page-container h1 {
+  font-size: 2.2rem;
+  color: var(--accent);
+  text-shadow: 0 0 20px oklch(0.78 0.14 200 / 0.1);
+  transition: color 0.3s ease;
+}
+
+.page-container .subtitle {
+  color: var(--text-muted);
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  color: var(--bg-card);
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+  box-shadow: 0 0 15px oklch(0.35 0.12 260 / 0.4);
+}
+
+.btn-primary.large {
+  padding: 0.9rem 2.5rem;
+  font-size: 1.1rem;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid oklch(0.4 0.02 250);
+  color: var(--text-muted);
+  padding: 0.9rem 2.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  border-color: var(--danger);
+  color: var(--danger);
+}

@@ -1,0 +1,14 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.15rem);
+  min-height: 100dvh;
+  overflow-x: hidden;
+}
